@@ -33,6 +33,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        
         mapView.delegate = self
         locaitonManager.delegate = self
         locaitonManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -193,6 +195,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         NotificationCenter.default.post(name: NSNotification.Name("newPlace"), object: nil)
         navigationController?.popViewController(animated: true)
+        
+        
+        
+        
         
     }
 }
